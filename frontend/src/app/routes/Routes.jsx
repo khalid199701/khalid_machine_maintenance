@@ -9,6 +9,7 @@ import MainDashboard from "../../features/maintenance/pages/mainDashboard/MainDa
 import MachineDetailsDashboard from "../../features/maintenance/pages/machineDetailsDashboard/MachineDetailsDashboard";
 import About from "../../features/landingPage/pages/about/About";
 import LoginLayout from "../../features/userManagement/pages/loginLayout/LoginLayout";
+import LogoutButton from "../../features/userManagement/components/logoutButton/LogoutButton";
 import QrCodeTable from "../../features/maintenance/pages/qrCodeTable/QrCodeTable";
 import SignInPage from "../../features/userManagement/pages/SignInPage";
 import ForgotPasswordPage from "../../features/userManagement/pages/ForgotPasswordPage";
@@ -45,10 +46,6 @@ export const router = createBrowserRouter([
           element: <SignUpLayout></SignUpLayout>, // Example new page
         },
         {
-<<<<<<< HEAD
-          path: "/login", // Dashboard route
-          element: <LoginLayout></LoginLayout>, // Example new page
-=======
           path: "/signin", // Dashboard route
           element: <SignInPage></SignInPage>, // Example new page
         },
@@ -63,7 +60,14 @@ export const router = createBrowserRouter([
         {
           path: "/add-machine2", // Dashboard route
           element:<AddMachineForm/> // Example new page
->>>>>>> 97468d8d1e3a6914f928d84fcbb770161a372da3
+        },
+        {
+          path: "/login", // Dashboard route
+          element: <LoginLayout></LoginLayout>, // Example new page
+        },
+        {
+          path: "/logout", // Dashboard route
+          element: <LogoutButton></LogoutButton>, // Example new page
         },
         {
           path: "/employeeList", // Dashboard route
